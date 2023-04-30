@@ -3,7 +3,7 @@ function sortString(str) {
     sortedtext = [];
     for (var i = 0; i < words.length; i++) {
       word = words[i];
-      position = parseInt(word.match(/\d/));//search for any number is the word and make is a number
+      position = parseInt(word.match(/\d+/));//search for any number is the word and make is a number
       sortedtext[position - 1] = word;
     }
     return sortedtext;
